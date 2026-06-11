@@ -1,0 +1,58 @@
+[
+  {
+    "code": "gdp_growth",
+    "label": "GDP growth",
+    "value": 4.9773565917572,
+    "unit": "%",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "population",
+    "label": "Population",
+    "value": 1408975000,
+    "unit": "people",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "exports",
+    "label": "Exports of goods & services",
+    "value": 3753056083349.04,
+    "unit": "USD",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "fdi",
+    "label": "FDI inflows",
+    "value": 18556141172.84,
+    "unit": "USD",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "internet_users",
+    "label": "Internet users",
+    "value": 91.6,
+    "unit": "%",
+    "year": 2025,
+    "source": "World Bank"
+  },
+  {
+    "code": "mobile",
+    "label": "Mobile subscriptions",
+    "value": 131.753932036803,
+    "unit": "per 100",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "electricity_pc",
+    "label": "Electricity use per capita",
+    "value": 6523.71926193193,
+    "unit": "kWh",
+    "year": 2023,
+    "source": "World Bank"
+  }
+]

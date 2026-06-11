@@ -1,0 +1,120 @@
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    environment:
+      LOG_LEVEL: info
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/country_intel
+      REDIS_URL: redis://redis:6379
+      OPENSEARCH_URL: http://opensearch:9200
+      # dev-grade secret for the stub login; real deployments inject from Vault
+      JWT_SECRET: local-docker-dev-secret-32-chars-min
+      LLM_PROVIDER: ${LLM_PROVIDER:-local}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-anthropic/claude-opus-4}
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      AGENT_AIRGAP: ${AGENT_AIRGAP:-1}
+      # set automatically when the voice profile is up: --profile voice
+      WHISPER_URL: ${WHISPER_URL:-}
+      WHISPER_MODEL: ${WHISPER_MODEL:-Systran/faster-whisper-small}
+      # Admin provider switches persist here (volume) across recreates;
+      # LLM_PROVIDER above only seeds the very first start.
+      LLM_CONFIG_PATH: /app/state/llm-config.json
+    volumes:
+      - webstate:/app/state
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # On-prem speech-to-text (OpenAI-compatible /v1/audio/transcriptions).
+  # Opt-in: WHISPER_URL=http://whisper:8000 docker compose --profile voice up -d
+  whisper:
+    image: ghcr.io/speaches-ai/speaches:latest-cpu
+    profiles: ["voice"]
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      WHISPER__MODEL: ${WHISPER_MODEL:-Systran/faster-whisper-small}
+    volumes:
+      - whispermodels:/home/ubuntu/.cache/huggingface
+
+  # One-shot: registers/downloads the whisper model — speaches starts with an
+  # empty registry and 404s transcription requests until the model is pulled.
+  whisper-init:
+    image: curlimages/curl:8.11.1
+    profiles: ["voice"]
+    depends_on:
+      - whisper
+    restart: "no"
+    environment:
+      WHISPER_MODEL: ${WHISPER_MODEL:-Systran/faster-whisper-small}
+    command:
+      - sh
+      - -c
+      - |
+        until curl -fsS http://whisper:8000/v1/models > /dev/null; do sleep 2; done
+        enc=$$(printf %s "$$WHISPER_MODEL" | sed 's|/|%2F|g')
+        curl -fsS -X POST "http://whisper:8000/v1/models/$$enc" && echo "model $$WHISPER_MODEL ready"
+
+  postgres:
+    image: postgis/postgis:16-3.4-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: country_intel
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d country_intel"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--save", "60", "1", "--maxmemory-policy", "allkeys-lru"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  opensearch:
+    image: opensearchproject/opensearch:2.18.0
+    restart: unless-stopped
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m
+      - DISABLE_SECURITY_PLUGIN=true
+      - DISABLE_INSTALL_DEMO_CONFIG=true
+    ports:
+      - "9200:9200"
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+    volumes:
+      - osdata:/usr/share/opensearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9200 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  pgdata:
+  osdata:
+  whispermodels:
+  webstate:

@@ -1,0 +1,70 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: country-intel
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - env: dev
+            destNamespace: country-intel-dev
+            autoSync: "true"
+          - env: prod
+            destNamespace: country-intel
+            autoSync: "false"
+  template:
+    metadata:
+      name: country-intel-{{env}}
+      annotations:
+        argocd.argoproj.io/sync-wave: "0"
+    spec:
+      project: country-intel
+      source:
+        repoURL: git@github.com:uae-gov/country-intel.git
+        targetRevision: HEAD
+        path: infra/k8s/overlays/{{env}}
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{destNamespace}}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+          - CreateNamespace=false
+          - PrunePropagationPolicy=foreground
+          - ServerSideApply=true
+        retry:
+          limit: 5
+          backoff:
+            duration: 10s
+            factor: 2
+            maxDuration: 5m
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: country-intel
+  namespace: argocd
+spec:
+  description: UAE Country Intelligence Platform
+  sourceRepos:
+    - git@github.com:uae-gov/country-intel.git
+  destinations:
+    - namespace: country-intel
+      server: https://kubernetes.default.svc
+    - namespace: country-intel-dev
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: ""
+      kind: Namespace
+  namespaceResourceBlacklist:
+    - group: ""
+      kind: ResourceQuota
+    - group: ""
+      kind: LimitRange
+  roles:
+    - name: viewer
+      policies:
+        - p, proj:country-intel:viewer, applications, get, country-intel/*, allow

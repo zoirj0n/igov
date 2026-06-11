@@ -1,0 +1,160 @@
+{
+  "_meta": {
+    "note": "Static civic facts + dated numeric fallbacks for the featured 14. Live World Bank values override numerics when online.",
+    "asOf": "2026-01-01"
+  },
+  "ARE": {
+    "capital": "Abu Dhabi",
+    "currency": "UAE dirham (AED)",
+    "politicalSystem": "Federation of emirates",
+    "language": "Arabic",
+    "populationM": 11.0,
+    "gdpPerCapitaUsd": 49000,
+    "tradePctGdp": 202,
+    "sectors": { "agriculture": 0.7, "industry": 47.5, "services": 51.8 },
+    "year": 2024
+  },
+  "SAU": {
+    "capital": "Riyadh",
+    "currency": "Saudi riyal (SAR)",
+    "politicalSystem": "Absolute monarchy",
+    "language": "Arabic",
+    "populationM": 33.0,
+    "gdpPerCapitaUsd": 32000,
+    "tradePctGdp": 64,
+    "sectors": { "agriculture": 2.6, "industry": 44.0, "services": 53.4 },
+    "year": 2023
+  },
+  "USA": {
+    "capital": "Washington, D.C.",
+    "currency": "US dollar (USD)",
+    "politicalSystem": "Federal presidential republic",
+    "language": "English",
+    "populationM": 335.0,
+    "gdpPerCapitaUsd": 86000,
+    "tradePctGdp": 25,
+    "sectors": { "agriculture": 1.0, "industry": 17.9, "services": 81.1 },
+    "year": 2023
+  },
+  "GBR": {
+    "capital": "London",
+    "currency": "Pound sterling (GBP)",
+    "politicalSystem": "Parliamentary constitutional monarchy",
+    "language": "English",
+    "populationM": 68.5,
+    "gdpPerCapitaUsd": 52000,
+    "tradePctGdp": 64,
+    "sectors": { "agriculture": 0.6, "industry": 17.3, "services": 82.1 },
+    "year": 2023
+  },
+  "FRA": {
+    "capital": "Paris",
+    "currency": "Euro (EUR)",
+    "politicalSystem": "Semi-presidential republic",
+    "language": "French",
+    "populationM": 68.2,
+    "gdpPerCapitaUsd": 46000,
+    "tradePctGdp": 73,
+    "sectors": { "agriculture": 1.8, "industry": 16.7, "services": 81.5 },
+    "year": 2023
+  },
+  "DEU": {
+    "capital": "Berlin",
+    "currency": "Euro (EUR)",
+    "politicalSystem": "Federal parliamentary republic",
+    "language": "German",
+    "populationM": 84.5,
+    "gdpPerCapitaUsd": 55000,
+    "tradePctGdp": 83,
+    "sectors": { "agriculture": 0.9, "industry": 26.6, "services": 72.5 },
+    "year": 2023
+  },
+  "JPN": {
+    "capital": "Tokyo",
+    "currency": "Japanese yen (JPY)",
+    "politicalSystem": "Parliamentary constitutional monarchy",
+    "language": "Japanese",
+    "populationM": 124.0,
+    "gdpPerCapitaUsd": 33000,
+    "tradePctGdp": 47,
+    "sectors": { "agriculture": 1.0, "industry": 27.4, "services": 71.6 },
+    "year": 2023
+  },
+  "KOR": {
+    "capital": "Seoul",
+    "currency": "South Korean won (KRW)",
+    "politicalSystem": "Presidential republic",
+    "language": "Korean",
+    "populationM": 51.7,
+    "gdpPerCapitaUsd": 35000,
+    "tradePctGdp": 88,
+    "sectors": { "agriculture": 1.6, "industry": 31.6, "services": 66.8 },
+    "year": 2023
+  },
+  "CHN": {
+    "capital": "Beijing",
+    "currency": "Renminbi (CNY)",
+    "politicalSystem": "One-party socialist republic",
+    "language": "Mandarin Chinese",
+    "populationM": 1410.0,
+    "gdpPerCapitaUsd": 13000,
+    "tradePctGdp": 37,
+    "sectors": { "agriculture": 7.1, "industry": 38.3, "services": 54.6 },
+    "year": 2023
+  },
+  "IND": {
+    "capital": "New Delhi",
+    "currency": "Indian rupee (INR)",
+    "politicalSystem": "Federal parliamentary republic",
+    "language": "Hindi, English",
+    "populationM": 1430.0,
+    "gdpPerCapitaUsd": 2700,
+    "tradePctGdp": 46,
+    "sectors": { "agriculture": 16.8, "industry": 25.0, "services": 58.2 },
+    "year": 2023
+  },
+  "BRA": {
+    "capital": "Brasília",
+    "currency": "Brazilian real (BRL)",
+    "politicalSystem": "Federal presidential republic",
+    "language": "Portuguese",
+    "populationM": 211.0,
+    "gdpPerCapitaUsd": 10300,
+    "tradePctGdp": 34,
+    "sectors": { "agriculture": 6.0, "industry": 22.0, "services": 72.0 },
+    "year": 2023
+  },
+  "ZAF": {
+    "capital": "Pretoria",
+    "currency": "South African rand (ZAR)",
+    "politicalSystem": "Parliamentary republic",
+    "language": "11 official languages",
+    "populationM": 62.0,
+    "gdpPerCapitaUsd": 6300,
+    "tradePctGdp": 65,
+    "sectors": { "agriculture": 2.7, "industry": 24.5, "services": 72.8 },
+    "year": 2023
+  },
+  "IDN": {
+    "capital": "Jakarta",
+    "currency": "Indonesian rupiah (IDR)",
+    "politicalSystem": "Presidential republic",
+    "language": "Indonesian",
+    "populationM": 278.0,
+    "gdpPerCapitaUsd": 4900,
+    "tradePctGdp": 41,
+    "sectors": { "agriculture": 12.5, "industry": 40.2, "services": 47.3 },
+    "year": 2023
+  },
+  "SGP": {
+    "capital": "Singapore",
+    "currency": "Singapore dollar (SGD)",
+    "politicalSystem": "Parliamentary republic",
+    "language": "English, Malay, Mandarin, Tamil",
+    "populationM": 5.9,
+    "gdpPerCapitaUsd": 88000,
+    "tradePctGdp": 311,
+    "sectors": { "agriculture": 0.0, "industry": 23.6, "services": 76.4 },
+    "year": 2023
+  }
+}

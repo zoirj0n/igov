@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* Ink scale as RGB triplets (dark-first, inverted: 50 = page bg, 900 = strongest text).
+     Tailwind maps these via rgb(var(--ink-N) / <alpha-value>) so opacity classes keep working. */
+  --ink-50: 11 11 18;
+  --ink-100: 20 20 29;
+  --ink-150: 28 28 39;
+  --ink-200: 42 42 54;
+  --ink-300: 59 59 72;
+  --ink-400: 106 107 120;
+  --ink-500: 139 140 152;
+  --ink-600: 169 170 180;
+  --ink-700: 200 201 208;
+  --ink-800: 228 229 234;
+  --ink-900: 246 247 249;
+  /* MOEI gold family */
+  --accent: 146 114 42; /* #92722a */
+  --accent-strong: 124 94 36; /* #7c5e24 */
+  --accent-subtle: 244 238 218; /* #f4eeda */
+  --hi: 215 188 109; /* bright highlight #d7bc6d */
+  --bg: rgb(var(--ink-50));
+  --fg: rgb(var(--ink-800));
+  --muted: rgb(var(--ink-500));
+  --border: rgb(var(--ink-200));
+}
+
+/* Light mode — warm cream (oklch(96.5% .012 85) page, oklch(98.5% .008 85) surfaces),
+   warm near-black text. The bright gold is illegible on cream, so the deep gold
+   takes over the highlight slot. */
+html[data-theme="light"] {
+  color-scheme: light;
+  --ink-50: 247 243 235;
+  --ink-100: 253 250 244;
+  --ink-150: 236 231 221;
+  --ink-200: 221 215 202;
+  --ink-300: 196 189 176;
+  --ink-400: 125 119 106;
+  --ink-500: 102 96 82;
+  --ink-600: 83 76 62;
+  --ink-700: 62 55 41;
+  --ink-800: 35 31 21;
+  --ink-900: 16 13 8;
+  --hi: 124 94 36;
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+html[dir="rtl"] {
+  font-family: var(--font-noto-kufi), "Noto Naskh Arabic", sans-serif;
+}
+
+body {
+  font-feature-settings: "ss01", "cv11";
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  background-image: linear-gradient(90deg, transparent, rgb(var(--ink-900) / 0.35), transparent);
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-in {
+  animation: fadeIn 200ms ease-out both;
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.6;
+  }
+}
+.pulse-dot {
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+/* Flowing bilateral-connection arc on the investment/trade map. */
+.map-arc {
+  stroke-dasharray: 7 5;
+  animation: dashFlow 1.2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer,
+  .animate-in,
+  .pulse-dot,
+  .map-arc,
+  .animate-pulse {
+    animation: none !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--ink-200));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Skip-to-content link for keyboard / screen-reader users. */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  z-index: 1000;
+  padding: 6px 12px;
+  background: rgb(var(--ink-800));
+  color: rgb(var(--ink-50));
+  border-radius: 6px;
+  font-size: 12px;
+  transition: top 150ms;
+}
+.skip-link:focus {
+  top: 8px;
+  outline: none;
+}
+
+@layer components {
+  .card {
+    @apply rounded-md border border-ink-200 bg-ink-100 shadow-card;
+  }
+
+  .section-title {
+    @apply text-sm font-semibold tracking-tight text-ink-800;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md bg-accent px-3.5 py-2 text-sm font-medium text-white shadow-card transition hover:bg-accent-strong active:bg-accent-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-ink-50 disabled:cursor-not-allowed disabled:bg-ink-300 disabled:text-white/70;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md border border-ink-200 bg-ink-100 px-3 py-1.5 text-sm font-medium text-ink-700 shadow-card transition hover:border-ink-300 hover:text-ink-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-ink-50 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md bg-signal-risk px-3.5 py-2 text-sm font-medium text-white shadow-card transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-signal-risk focus-visible:ring-offset-2 focus-visible:ring-offset-ink-50 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-xs px-1.5 py-0.5 text-2xs font-medium uppercase tracking-wide;
+  }
+  .chip-ok {
+    background-color: color-mix(in oklch, oklch(0.62 0.1 150) 15%, transparent);
+    color: oklch(0.62 0.1 150);
+  }
+  .chip-warn {
+    background-color: color-mix(in oklch, oklch(0.74 0.12 75) 15%, transparent);
+    color: oklch(0.74 0.12 75);
+  }
+  .chip-risk {
+    background-color: color-mix(in oklch, oklch(0.6 0.14 22) 15%, transparent);
+    color: oklch(0.6 0.14 22);
+  }
+  .chip-info {
+    @apply bg-accent-subtle text-accent;
+  }
+  .chip-muted {
+    @apply bg-ink-100       text-ink-600;
+  }
+}

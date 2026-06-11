@@ -1,0 +1,74 @@
+[
+  {
+    "code": "gdp",
+    "label": "GDP",
+    "value": 4685592577804.69,
+    "unit": "USD",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "gdp_growth",
+    "label": "GDP growth",
+    "value": -0.495851897260366,
+    "unit": "%",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "population",
+    "label": "Population",
+    "value": 83516593,
+    "unit": "people",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "renew_share",
+    "label": "Renewables share of energy",
+    "value": 17.6,
+    "unit": "%",
+    "year": 2021,
+    "source": "World Bank"
+  },
+  {
+    "code": "exports",
+    "label": "Exports of goods & services",
+    "value": 1941431210621.87,
+    "unit": "USD",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "fdi",
+    "label": "FDI inflows",
+    "value": 47599143488.7827,
+    "unit": "USD",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "internet_users",
+    "label": "Internet users",
+    "value": 93.49999579,
+    "unit": "%",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "mobile",
+    "label": "Mobile subscriptions",
+    "value": 129.150921864378,
+    "unit": "per 100",
+    "year": 2024,
+    "source": "World Bank"
+  },
+  {
+    "code": "electricity_pc",
+    "label": "Electricity use per capita",
+    "value": 6109.08541252395,
+    "unit": "kWh",
+    "year": 2024,
+    "source": "World Bank"
+  }
+]

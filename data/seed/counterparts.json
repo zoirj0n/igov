@@ -1,0 +1,117 @@
+{
+  "ARE:energy": {
+    "name": "Suhail Al Mazrouei",
+    "nameAr": "سهيل المزروعي",
+    "role": "Minister of Energy and Infrastructure",
+    "roleAr": "وزير الطاقة والبنية التحتية",
+    "summary": "Suhail Al Mazrouei has held the UAE energy portfolio since 2013, making him one of OPEC+'s longest-serving ministers. An oil-and-gas engineer by training with a career through ADNOC and Mubadala Petroleum, he steers the National Energy Strategy 2050, the hydrogen roadmap and grid-investment programme, and represents the UAE in OPEC+ production diplomacy.",
+    "career": [
+      {
+        "period": "2013–",
+        "position": "Minister of Energy (later Energy & Infrastructure)",
+        "org": "UAE Government"
+      }
+    ],
+    "likelyToRaise": [
+      "OPEC+ alignment",
+      "Hydrogen partnerships",
+      "Grid interconnection"
+    ],
+    "statements": [],
+    "citations": [
+      "https://en.wikipedia.org/wiki/Suhail_Al_Mazrouei"
+    ],
+    "identifiedAsOf": "2026-01-01",
+    "confidence": "medium",
+    "education": "BSc Petroleum Engineering, University of Tulsa"
+  },
+  "SAU:energy": {
+    "name": "Abdulaziz bin Salman Al Saud",
+    "nameAr": "عبد العزيز بن سلمان آل سعود",
+    "role": "Minister of Energy",
+    "roleAr": "وزير الطاقة",
+    "summary": "Prince Abdulaziz bin Salman Al Saud has been Saudi Arabia's Minister of Energy since 2019 — the first royal in the role — after three decades in the ministry. The Kingdom's chief OPEC+ strategist, he runs production policy with an iron grip while driving Vision 2030's renewables build-out, the NEOM green hydrogen project and domestic gas expansion.",
+    "career": [
+      {
+        "period": "2019–",
+        "position": "Minister of Energy",
+        "org": "Government of Saudi Arabia"
+      }
+    ],
+    "likelyToRaise": [
+      "OPEC+ production policy",
+      "NEOM green hydrogen",
+      "Power-grid interconnection"
+    ],
+    "statements": [],
+    "citations": [
+      "https://en.wikipedia.org/wiki/Abdulaziz_bin_Salman_Al_Saud"
+    ],
+    "identifiedAsOf": "2026-01-01",
+    "confidence": "medium",
+    "education": "BSc Industrial Management, King Fahd University of Petroleum and Minerals"
+  },
+  "BRA:energy": {
+    "name": "Alexandre Silveira",
+    "nameAr": "ألكسندري سيلفيرا",
+    "role": "Minister of Mines and Energy",
+    "roleAr": "وزير المناجم والطاقة",
+    "summary": "Brazil's Minister of Mines and Energy since January 2023 and a senator for Minas Gerais before that, Alexandre Silveira is a lawyer and career politician with a power base in Brazil's centrist PSD. In office he has pushed the fuel-of-the-future programme (biofuels and SAF mandates), large-scale transmission auctions and offshore wind regulation, positioning Brazil as a clean-energy investment destination while defending Petrobras's role in the transition.",
+    "career": [
+      {
+        "period": "2023–",
+        "position": "Minister of Mines and Energy",
+        "org": "Government of Brazil"
+      },
+      {
+        "period": "2022",
+        "position": "Senator (Minas Gerais)",
+        "org": "Federal Senate of Brazil"
+      }
+    ],
+    "likelyToRaise": [
+      "Biofuels & SAF partnerships — Brazil seeks anchor investors for its SAF mandate supply chain",
+      "Green hydrogen investment — ports of Pecém and Açu court Gulf capital",
+      "Critical minerals — offtake and processing partnerships for its nickel/rare-earth reserves",
+      "Petrobras cooperation — joint ventures in refining and offshore"
+    ],
+    "statements": [],
+    "citations": [
+      "https://en.wikipedia.org/wiki/Alexandre_Silveira"
+    ],
+    "identifiedAsOf": "2026-01-01",
+    "confidence": "medium",
+    "education": "Law (Milton Campos Faculty of Law); police chief career before politics"
+  },
+  "IDN:energy": {
+    "name": "Bahlil Lahadalia",
+    "nameAr": "بهليل لاهادليا",
+    "role": "Minister of Energy and Mineral Resources",
+    "roleAr": "وزير الطاقة والموارد المعدنية",
+    "summary": "Bahlil Lahadalia became Indonesia's Minister of Energy and Mineral Resources in August 2024 after five years as Investment Minister, where he ran the downstreaming drive that made Indonesia the world's nickel-processing hub. A self-made businessman from Papua and Golkar party chairman, he ties every energy conversation back to investment, domestic processing and resource nationalism.",
+    "career": [
+      {
+        "period": "2024–",
+        "position": "Minister of Energy and Mineral Resources",
+        "org": "Government of Indonesia"
+      },
+      {
+        "period": "2021–2024",
+        "position": "Minister of Investment",
+        "org": "Government of Indonesia"
+      }
+    ],
+    "likelyToRaise": [
+      "Downstream nickel investment",
+      "Refinery & storage capacity",
+      "Energy-transition funding"
+    ],
+    "statements": [],
+    "citations": [
+      "https://en.wikipedia.org/wiki/Bahlil_Lahadalia"
+    ],
+    "identifiedAsOf": "2026-01-01",
+    "confidence": "medium",
+    "education": "Economics, STIE Port Numbay; former HIPMI chairman"
+  }
+}

@@ -1,0 +1,15 @@
+{"id":"q01","question":"hello","intent":"greeting","entities":[],"shouldAbstain":false,"lang":"en"}
+{"id":"q02","question":"what can you do?","intent":"help","entities":[],"shouldAbstain":false,"lang":"en"}
+{"id":"q03","question":"who built you?","intent":"meta","entities":[],"shouldAbstain":false,"lang":"en"}
+{"id":"q04","question":"thanks","intent":"smalltalk","entities":[],"shouldAbstain":false,"lang":"en"}
+{"id":"q05","question":"What was the UAE GDP in 2023?","intent":"factual","entities":["ARE"],"shouldAbstain":false,"isNumeric":true,"lang":"en","expectFacts":true}
+{"id":"q06","question":"How big is Saudi Arabia's economy?","intent":"factual","entities":["SAU"],"shouldAbstain":false,"isNumeric":true,"lang":"en","expectFacts":true}
+{"id":"q07","question":"Renewables share in the Emirates last year","intent":"factual","entities":["ARE"],"shouldAbstain":false,"isNumeric":true,"lang":"en"}
+{"id":"q08","question":"Tell me about Japan smart city investments","intent":"factual","entities":["JPN"],"shouldAbstain":false,"isNumeric":false,"lang":"en","note":"JPN doc seeded; expects retrieval"}
+{"id":"q09","question":"Compare Germany and France GDP","intent":"factual","entities":["DEU","FRA"],"shouldAbstain":false,"isNumeric":true,"lang":"en","expectFacts":true}
+{"id":"q10","question":"ما هو الناتج المحلي الإجمالي للإمارات؟","intent":"factual","entities":["ARE"],"shouldAbstain":false,"isNumeric":true,"lang":"ar","expectFacts":true}
+{"id":"q11","question":"How is the kingdom doing economically?","intent":"factual","entities":["SAU"],"shouldAbstain":false,"isNumeric":true,"lang":"en","note":"paraphrase: 'the kingdom'→SAU"}
+{"id":"q12","question":"oil production in UAE","intent":"factual","entities":["ARE"],"shouldAbstain":false,"isNumeric":true,"lang":"en","expectFacts":true}
+{"id":"q13","question":"What's the population of India in 2024?","intent":"factual","entities":["IND"],"shouldAbstain":false,"isNumeric":true,"lang":"en","expectFacts":true}
+{"id":"q14","question":"Random question with no country","intent":"factual","entities":[],"shouldAbstain":true,"isNumeric":false,"lang":"en"}
+{"id":"q15","question":"hi there","intent":"greeting","entities":[],"shouldAbstain":false,"lang":"en"}

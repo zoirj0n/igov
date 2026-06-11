@@ -1,0 +1,73 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: country-intel-dev
+
+resources:
+  - ../../base
+
+namePrefix: dev-
+
+commonLabels:
+  app.kubernetes.io/instance: dev
+  environment: dev
+
+images:
+  - name: registry.uae.country-intel/web
+    newTag: latest
+
+replicas:
+  - name: web
+    count: 1
+
+patches:
+  - target:
+      kind: Deployment
+      name: web
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/resources/requests/cpu
+        value: "100m"
+      - op: replace
+        path: /spec/template/spec/containers/0/resources/limits/cpu
+        value: "500m"
+  - target:
+      kind: Ingress
+      name: web
+    patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: dev.country-intel.gov.ae
+      - op: replace
+        path: /spec/tls/0/hosts/0
+        value: dev.country-intel.gov.ae
+  - target:
+      kind: HorizontalPodAutoscaler
+      name: web
+    patch: |-
+      - op: replace
+        path: /spec/minReplicas
+        value: 1
+      - op: replace
+        path: /spec/maxReplicas
+        value: 3
+  - target:
+      kind: PodDisruptionBudget
+      name: web
+    patch: |-
+      - op: replace
+        path: /spec/minAvailable
+        value: 1
+  - target:
+      kind: ConfigMap
+      name: web-config
+    patch: |-
+      - op: replace
+        path: /data/NODE_ENV
+        value: "development"
+      - op: replace
+        path: /data/LOG_LEVEL
+        value: "debug"
+      - op: replace
+        path: /data/OIDC_REDIRECT_URI
+        value: "https://dev.country-intel.gov.ae/auth/callback"

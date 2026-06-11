@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-config
+data:
+  NODE_ENV: "production"
+  LOG_LEVEL: "info"
+  ANTHROPIC_MODEL: "claude-opus-4-7"
+  WORLDBANK_API_BASE: "https://api.worldbank.org/v2"
+  IMF_API_BASE: "https://www.imf.org/external/datamapper/api/v1"
+  USE_DB: "1"
+  S3_REGION: "me-central-1"
+  OIDC_REDIRECT_URI: "https://country-intel.gov.ae/auth/callback"

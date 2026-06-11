@@ -1,0 +1,103 @@
+{"id":"seed:ARE:gdp","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — GDP: 552.3 billion USD (2024, World Bank)."}
+{"id":"seed:ARE:gdp_growth","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — GDP growth: 3.99180705485398 % (2024, World Bank)."}
+{"id":"seed:ARE:population","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — Population: 11.0 million (2024, World Bank)."}
+{"id":"seed:ARE:renew_share","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — Renewables share of energy: 1 % (2021, World Bank)."}
+{"id":"seed:ARE:exports","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — Exports of goods & services: 558.4 billion USD (2023, World Bank)."}
+{"id":"seed:ARE:fdi","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — FDI inflows: 45.6 billion USD (2024, World Bank)."}
+{"id":"seed:ARE:internet_users","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — Internet users: 100 % (2024, World Bank)."}
+{"id":"seed:ARE:mobile","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — Mobile subscriptions: 203.206410299544 per 100 (2024, World Bank)."}
+{"id":"seed:ARE:electricity_pc","iso3":"ARE","lang":"en","source":"World Bank","text":"the UAE — Electricity use per capita: 15284.7010578561 kWh (2023, World Bank)."}
+{"id":"seed:SAU:gdp","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — GDP: 1.24 trillion USD (2024, World Bank)."}
+{"id":"seed:SAU:gdp_growth","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — GDP growth: 1.99650173436159 % (2024, World Bank)."}
+{"id":"seed:SAU:population","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — Population: 35.3 million (2024, World Bank)."}
+{"id":"seed:SAU:renew_share","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — Renewables share of energy: 0.1 % (2021, World Bank)."}
+{"id":"seed:SAU:exports","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — Exports of goods & services: 360.9 billion USD (2024, World Bank)."}
+{"id":"seed:SAU:fdi","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — FDI inflows: 21.3 billion USD (2024, World Bank)."}
+{"id":"seed:SAU:internet_users","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — Internet users: 100 % (2024, World Bank)."}
+{"id":"seed:SAU:mobile","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — Mobile subscriptions: 159.541370566589 per 100 (2024, World Bank)."}
+{"id":"seed:SAU:electricity_pc","iso3":"SAU","lang":"en","source":"World Bank","text":"Saudi Arabia — Electricity use per capita: 11910.5778104451 kWh (2023, World Bank)."}
+{"id":"seed:USA:gdp","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — GDP: 28.75 trillion USD (2024, World Bank)."}
+{"id":"seed:USA:gdp_growth","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — GDP growth: 2.79300127716779 % (2024, World Bank)."}
+{"id":"seed:USA:population","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — Population: 340.1 million (2024, World Bank)."}
+{"id":"seed:USA:renew_share","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — Renewables share of energy: 10.9 % (2021, World Bank)."}
+{"id":"seed:USA:exports","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — Exports of goods & services: 3.19 trillion USD (2024, World Bank)."}
+{"id":"seed:USA:fdi","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — FDI inflows: 297.1 billion USD (2024, World Bank)."}
+{"id":"seed:USA:internet_users","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — Internet users: 94.69380188 % (2024, World Bank)."}
+{"id":"seed:USA:mobile","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — Mobile subscriptions: 113.190481805755 per 100 (2024, World Bank)."}
+{"id":"seed:USA:electricity_pc","iso3":"USA","lang":"en","source":"World Bank","text":"the United States — Electricity use per capita: 12835.2954006884 kWh (2024, World Bank)."}
+{"id":"seed:GBR:gdp","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — GDP: 3.69 trillion USD (2024, World Bank)."}
+{"id":"seed:GBR:gdp_growth","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — GDP growth: 1.1264226705118 % (2024, World Bank)."}
+{"id":"seed:GBR:population","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — Population: 69.2 million (2024, World Bank)."}
+{"id":"seed:GBR:renew_share","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — Renewables share of energy: 12.2 % (2021, World Bank)."}
+{"id":"seed:GBR:exports","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — Exports of goods & services: 1.14 trillion USD (2024, World Bank)."}
+{"id":"seed:GBR:fdi","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — FDI inflows: -12,955,141,485 USD (2024, World Bank)."}
+{"id":"seed:GBR:internet_users","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — Internet users: 95.4720993 % (2024, World Bank)."}
+{"id":"seed:GBR:mobile","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — Mobile subscriptions: 121.643331373201 per 100 (2024, World Bank)."}
+{"id":"seed:GBR:electricity_pc","iso3":"GBR","lang":"en","source":"World Bank","text":"the United Kingdom — Electricity use per capita: 4198.22032184439 kWh (2024, World Bank)."}
+{"id":"seed:FRA:gdp","iso3":"FRA","lang":"en","source":"World Bank","text":"France — GDP: 3.16 trillion USD (2024, World Bank)."}
+{"id":"seed:FRA:gdp_growth","iso3":"FRA","lang":"en","source":"World Bank","text":"France — GDP growth: 1.19046798275883 % (2024, World Bank)."}
+{"id":"seed:FRA:population","iso3":"FRA","lang":"en","source":"World Bank","text":"France — Population: 68.6 million (2024, World Bank)."}
+{"id":"seed:FRA:renew_share","iso3":"FRA","lang":"en","source":"World Bank","text":"France — Renewables share of energy: 16.2 % (2021, World Bank)."}
+{"id":"seed:FRA:exports","iso3":"FRA","lang":"en","source":"World Bank","text":"France — Exports of goods & services: 1.07 trillion USD (2024, World Bank)."}
+{"id":"seed:FRA:fdi","iso3":"FRA","lang":"en","source":"World Bank","text":"France — FDI inflows: 52.1 billion USD (2024, World Bank)."}
+{"id":"seed:FRA:internet_users","iso3":"FRA","lang":"en","source":"World Bank","text":"France — Internet users: 88.65381638 % (2024, World Bank)."}
+{"id":"seed:FRA:mobile","iso3":"FRA","lang":"en","source":"World Bank","text":"France — Mobile subscriptions: 116.687800394775 per 100 (2023, World Bank)."}
+{"id":"seed:FRA:electricity_pc","iso3":"FRA","lang":"en","source":"World Bank","text":"France — Electricity use per capita: 6447.21141881145 kWh (2024, World Bank)."}
+{"id":"seed:DEU:gdp","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — GDP: 4.69 trillion USD (2024, World Bank)."}
+{"id":"seed:DEU:gdp_growth","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — GDP growth: -0.495851897260366 % (2024, World Bank)."}
+{"id":"seed:DEU:population","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — Population: 83.5 million (2024, World Bank)."}
+{"id":"seed:DEU:renew_share","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — Renewables share of energy: 17.6 % (2021, World Bank)."}
+{"id":"seed:DEU:exports","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — Exports of goods & services: 1.94 trillion USD (2024, World Bank)."}
+{"id":"seed:DEU:fdi","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — FDI inflows: 47.6 billion USD (2024, World Bank)."}
+{"id":"seed:DEU:internet_users","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — Internet users: 93.49999579 % (2024, World Bank)."}
+{"id":"seed:DEU:mobile","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — Mobile subscriptions: 129.150921864378 per 100 (2024, World Bank)."}
+{"id":"seed:DEU:electricity_pc","iso3":"DEU","lang":"en","source":"World Bank","text":"Germany — Electricity use per capita: 6109.08541252395 kWh (2024, World Bank)."}
+{"id":"seed:JPN:gdp","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — GDP: 4.03 trillion USD (2024, World Bank)."}
+{"id":"seed:JPN:gdp_growth","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — GDP growth: 0.104309021773304 % (2024, World Bank)."}
+{"id":"seed:JPN:population","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — Population: 124.0 million (2024, World Bank)."}
+{"id":"seed:JPN:renew_share","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — Renewables share of energy: 8.8 % (2021, World Bank)."}
+{"id":"seed:JPN:exports","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — Exports of goods & services: 917.0 billion USD (2024, World Bank)."}
+{"id":"seed:JPN:fdi","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — FDI inflows: 16.2 billion USD (2024, World Bank)."}
+{"id":"seed:JPN:internet_users","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — Internet users: 85.54153081 % (2024, World Bank)."}
+{"id":"seed:JPN:mobile","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — Mobile subscriptions: 178.432441299977 per 100 (2023, World Bank)."}
+{"id":"seed:JPN:electricity_pc","iso3":"JPN","lang":"en","source":"World Bank","text":"Japan — Electricity use per capita: 7530.06014396198 kWh (2024, World Bank)."}
+{"id":"seed:KOR:gdp","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — GDP: 1.88 trillion USD (2024, World Bank)."}
+{"id":"seed:KOR:gdp_growth","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — GDP growth: 2.00361101838986 % (2024, World Bank)."}
+{"id":"seed:KOR:population","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — Population: 51.8 million (2024, World Bank)."}
+{"id":"seed:KOR:renew_share","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — Renewables share of energy: 3.6 % (2021, World Bank)."}
+{"id":"seed:KOR:exports","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — Exports of goods & services: 831.9 billion USD (2024, World Bank)."}
+{"id":"seed:KOR:fdi","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — FDI inflows: 12.9 billion USD (2024, World Bank)."}
+{"id":"seed:KOR:internet_users","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — Internet users: 97.89563777 % (2024, World Bank)."}
+{"id":"seed:KOR:mobile","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — Mobile subscriptions: 172.520241179065 per 100 (2024, World Bank)."}
+{"id":"seed:KOR:electricity_pc","iso3":"KOR","lang":"en","source":"World Bank","text":"South Korea — Electricity use per capita: 11350.1625522103 kWh (2024, World Bank)."}
+{"id":"seed:CHN:gdp_growth","iso3":"CHN","lang":"en","source":"World Bank","text":"China — GDP growth: 4.9773565917572 % (2024, World Bank)."}
+{"id":"seed:CHN:population","iso3":"CHN","lang":"en","source":"World Bank","text":"China — Population: 1409.0 million (2024, World Bank)."}
+{"id":"seed:CHN:exports","iso3":"CHN","lang":"en","source":"World Bank","text":"China — Exports of goods & services: 3.75 trillion USD (2024, World Bank)."}
+{"id":"seed:CHN:fdi","iso3":"CHN","lang":"en","source":"World Bank","text":"China — FDI inflows: 18.6 billion USD (2024, World Bank)."}
+{"id":"seed:CHN:internet_users","iso3":"CHN","lang":"en","source":"World Bank","text":"China — Internet users: 91.6 % (2025, World Bank)."}
+{"id":"seed:CHN:mobile","iso3":"CHN","lang":"en","source":"World Bank","text":"China — Mobile subscriptions: 131.753932036803 per 100 (2024, World Bank)."}
+{"id":"seed:CHN:electricity_pc","iso3":"CHN","lang":"en","source":"World Bank","text":"China — Electricity use per capita: 6523.71926193193 kWh (2023, World Bank)."}
+{"id":"seed:IND:gdp","iso3":"IND","lang":"en","source":"World Bank","text":"India — GDP: 3.91 trillion USD (2024, World Bank)."}
+{"id":"seed:IND:gdp_growth","iso3":"IND","lang":"en","source":"World Bank","text":"India — GDP growth: 6.49476552383821 % (2024, World Bank)."}
+{"id":"seed:IND:population","iso3":"IND","lang":"en","source":"World Bank","text":"India — Population: 1450.9 million (2024, World Bank)."}
+{"id":"seed:IND:renew_share","iso3":"IND","lang":"en","source":"World Bank","text":"India — Renewables share of energy: 34.9 % (2021, World Bank)."}
+{"id":"seed:IND:exports","iso3":"IND","lang":"en","source":"World Bank","text":"India — Exports of goods & services: 827.4 billion USD (2024, World Bank)."}
+{"id":"seed:IND:fdi","iso3":"IND","lang":"en","source":"World Bank","text":"India — FDI inflows: 27.1 billion USD (2024, World Bank)."}
+{"id":"seed:IND:internet_users","iso3":"IND","lang":"en","source":"World Bank","text":"India — Internet users: 70 % (2025, World Bank)."}
+{"id":"seed:IND:mobile","iso3":"IND","lang":"en","source":"World Bank","text":"India — Mobile subscriptions: 79.3526921826412 per 100 (2024, World Bank)."}
+{"id":"seed:IND:electricity_pc","iso3":"IND","lang":"en","source":"World Bank","text":"India — Electricity use per capita: 1181.63126786529 kWh (2023, World Bank)."}
+{"id":"seed:BRA:gdp","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — GDP: 2.19 trillion USD (2024, World Bank)."}
+{"id":"seed:BRA:gdp_growth","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — GDP growth: 3.41931516597739 % (2024, World Bank)."}
+{"id":"seed:BRA:population","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — Population: 212.0 million (2024, World Bank)."}
+{"id":"seed:BRA:renew_share","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — Renewables share of energy: 46.5 % (2021, World Bank)."}
+{"id":"seed:BRA:exports","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — Exports of goods & services: 392.1 billion USD (2024, World Bank)."}
+{"id":"seed:BRA:fdi","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — FDI inflows: 74.1 billion USD (2024, World Bank)."}
+{"id":"seed:BRA:internet_users","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — Internet users: 84.46347227 % (2024, World Bank)."}
+{"id":"seed:BRA:mobile","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — Mobile subscriptions: 101.926846460424 per 100 (2024, World Bank)."}
+{"id":"seed:BRA:electricity_pc","iso3":"BRA","lang":"en","source":"World Bank","text":"Brazil — Electricity use per capita: 3068.09612345834 kWh (2024, World Bank)."}
+{"id":"seed:ZAF:gdp_growth","iso3":"ZAF","lang":"en","source":"World Bank","text":"South Africa — GDP growth: 0.534843531905139 % (2024, World Bank)."}
+{"id":"seed:ZAF:population","iso3":"ZAF","lang":"en","source":"World Bank","text":"South Africa — Population: 64.0 million (2024, World Bank)."}
+{"id":"seed:ZAF:fdi","iso3":"ZAF","lang":"en","source":"World Bank","text":"South Africa — FDI inflows: 2.3 billion USD (2024, World Bank)."}
+{"id":"seed:ZAF:internet_users","iso3":"ZAF","lang":"en","source":"World Bank","text":"South Africa — Internet users: 78.35759735 % (2024, World Bank)."}
+{"id":"seed:ZAF:mobile","iso3":"ZAF","lang":"en","source":"World Bank","text":"South Africa — Mobile subscriptions: 179.336329840585 per 100 (2024, World Bank)."}
+{"id":"seed:ZAF:electricity_pc","iso3":"ZAF","lang":"en","source":"World Bank","text":"South Africa — Electricity use per capita: 3247.14853342661 kWh (2023, World Bank)."}

@@ -1,0 +1,47 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: country-intel
+
+resources:
+  - ../../base
+
+commonLabels:
+  app.kubernetes.io/instance: prod
+  environment: prod
+
+images:
+  - name: registry.uae.country-intel/web
+    newName: registry.uae.country-intel/web
+    newTag: stable
+
+patches:
+  - target:
+      kind: Deployment
+      name: web
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 6
+      - op: replace
+        path: /spec/template/spec/containers/0/resources/requests/cpu
+        value: "500m"
+      - op: replace
+        path: /spec/template/spec/containers/0/resources/requests/memory
+        value: "1Gi"
+      - op: replace
+        path: /spec/template/spec/containers/0/resources/limits/cpu
+        value: "2000m"
+      - op: replace
+        path: /spec/template/spec/containers/0/resources/limits/memory
+        value: "2Gi"
+  - target:
+      kind: HorizontalPodAutoscaler
+      name: web
+    patch: |-
+      - op: replace
+        path: /spec/minReplicas
+        value: 6
+      - op: replace
+        path: /spec/maxReplicas
+        value: 24

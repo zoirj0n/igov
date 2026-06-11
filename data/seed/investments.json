@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "note": "Curated demo data — widely reported UAE bilateral investments, rounded public figures. Verify each entry before any official use.",
+    "asOf": "2026-01-01"
+  },
+  "BRA": [
+    {
+      "title": "Mubadala Capital — Mataripe refinery (Acelen)",
+      "valueUsd": 1800000000,
+      "year": 2021,
+      "parties": ["Mubadala Capital", "Acelen"],
+      "sector": "energy",
+      "source": { "name": "Mubadala", "url": "https://www.mubadala.com" }
+    },
+    {
+      "title": "Mubadala Capital — Brazil biofuels platform commitment",
+      "valueUsd": 2500000000,
+      "year": 2024,
+      "parties": ["Mubadala Capital"],
+      "sector": "energy",
+      "source": { "name": "Reuters", "url": "https://www.reuters.com" }
+    }
+  ],
+  "IND": [
+    {
+      "title": "ADIA — NIIF master fund anchor commitment",
+      "valueUsd": 1000000000,
+      "year": 2017,
+      "parties": ["ADIA", "NIIF"],
+      "sector": "infrastructure",
+      "source": { "name": "NIIF", "url": "https://niifindia.in" }
+    },
+    {
+      "title": "DP World — Indian ports & logistics platform (Hindustan Infralog)",
+      "valueUsd": 3000000000,
+      "year": 2018,
+      "parties": ["DP World", "NIIF"],
+      "sector": "trade",
+      "source": { "name": "DP World", "url": "https://www.dpworld.com" }
+    }
+  ],
+  "IDN": [
+    {
+      "title": "UAE — Indonesia Investment Authority (INA) commitment",
+      "valueUsd": 10000000000,
+      "year": 2021,
+      "parties": ["UAE (sovereign)", "INA"],
+      "sector": "economy",
+      "source": { "name": "Indonesia Investment Authority", "url": "https://www.ina.go.id" }
+    },
+    {
+      "title": "Masdar — Cirata floating solar plant (145 MWac)",
+      "valueUsd": 145000000,
+      "year": 2023,
+      "parties": ["Masdar", "PLN"],
+      "sector": "energy",
+      "source": { "name": "Masdar", "url": "https://masdar.ae" }
+    }
+  ],
+  "DEU": [
+    {
+      "title": "ADNOC — Covestro acquisition (agreed)",
+      "valueUsd": 16000000000,
+      "year": 2024,
+      "parties": ["ADNOC", "Covestro"],
+      "sector": "economy",
+      "source": { "name": "Reuters", "url": "https://www.reuters.com" }
+    },
+    {
+      "title": "Masdar — German offshore wind & storage partnerships",
+      "valueUsd": 1000000000,
+      "year": 2023,
+      "parties": ["Masdar"],
+      "sector": "energy",
+      "source": { "name": "Masdar", "url": "https://masdar.ae" }
+    }
+  ]
+}

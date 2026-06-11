@@ -1,0 +1,98 @@
+# deps
+node_modules/
+.pnpm-store/
+
+# build
+dist/
+.next/
+out/
+*.tsbuildinfo
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# claude session captures (contain full chat + tool I/O; treat as Internal)
+logs/sessions/*.jsonl
+logs/sessions/*.transcript.jsonl
+logs/chat/*.jsonl
+!logs/sessions/README.md
+!logs/sessions/.gitkeep
+!logs/chat/.gitkeep
+
+# editor
+.vscode/
+.idea/
+.DS_Store
+
+# test
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# claude local overrides
+.claude/settings.local.json
+.claude/cache/
+
+# secrets / certs
+*.pem
+*.key
+secrets/
+
+# agent resource caches (fetched payloads — regen via scripts/sync-sources.sh)
+agent-resources/*/*.cache.*
+!agent-resources/manifest.json
+!agent-resources/README.md
+!agent-resources/**/sources.md
+
+# user-uploaded reference files (may contain Internal+ data)
+agent-resources/uploads/*
+!agent-resources/uploads/.gitkeep
+
+# user-added sources catalog (mutated at runtime)
+data/user-sources.json
+
+# per-source import outcomes (rows ingested, errors, actor — Internal)
+data/import-results.json
+
+# ingest runner last-run status (rebuilt by /api/admin/import/auto)
+data/runner-status.json
+
+# LLM provider config (admin-set; cloud/openrouter/local switch)
+data/llm-config.json
+
+# Org/dept policy + per-user classification overrides (Internal classification minimum)
+data/departments.json
+data/org-policy.json
+data/user-overrides.json
+data/user-departments.json
+
+# RAG: chunk + embedding store (may contain Internal source material)
+data/rag-chunks.json
+
+# Persisted agent run records (runtime-mutated)
+data/runs/
+
+# Cached counterpart photos (runtime-fetched, offline after first hit)
+data/cache/
+
+# Telemetry / log streams (Internal classification minimum — contain actor emails, IPs, classifications)
+logs/access.jsonl
+logs/audit.jsonl
+logs/llm-calls.jsonl
+logs/retrieval.jsonl
+
+# Rotated archives (gzipped jsonl)
+logs/*.jsonl.*.gz
+logs/chat/*.jsonl.*.gz
+
+# Playwright MCP artifacts
+.playwright-mcp/
+.tmp/
